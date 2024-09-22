@@ -1,6 +1,6 @@
 import './chat.css'
 import EmojiPicker from "emoji-picker-react"
-import { onSnapshot, doc, updateDoc } from 'firebase/firestore'
+import { onSnapshot, doc, updateDoc, arrayUnion } from 'firebase/firestore'
 import { useState, useRef, useEffect } from 'react'
 import { db } from '../../lib/firebase'
 import { useChatStore } from '../../lib/chatStore' 

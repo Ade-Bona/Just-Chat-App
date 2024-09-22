@@ -2,7 +2,7 @@ import './detail.css'
 import { auth, db } from '../../lib/firebase'
 import { useChatStore } from '../../lib/chatStore'
 import { useUserStore } from '../../lib/userStore'
-import { doc, updateDoc } from 'firebase/firestore'
+import { doc, updateDoc, arrayUnion, arrayRemove } from 'firebase/firestore'
 
 const Detail = () => {
 
